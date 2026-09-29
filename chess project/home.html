@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CHECKORA | Home</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #050510;
+            color: white;
+        }
+
+        .navbar-brand img {
+            width: 45px;
+            height: 45px;
+            object-fit: cover;
+        }
+
+        .carousel-item img {
+            height: 550px;
+            object-fit: cover;
+            filter: brightness(45%);
+        }
+
+        .carousel-caption {
+            bottom: 30%;
+        }
+
+        .carousel-caption h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .service-card {
+            background-color: #10101f;
+            color: white;
+            border: 1px solid #292947;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .service-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+
+            <div class="container">
+<div class="col-3">
+            
+                <a class="navbar-brand d-flex align-items-center" href="home.html">
+
+                    <img src="data:image/png;base64,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
+                    /IqtLZ+YsWZxMNp05ctINJvSUaDtRECiCRhvcVGf93vQiij9p+qxXi2ysCZbcHBOZ+2nnfCVJ6Kd8yqd8yqd8yv+H/Bc72QNyYNEURQAAAABJRU5ErkJggg=="
+                        class="rounded-circle me-2" alt="CHECKORA Logo" >
+
+                    <strong>CHECKORA</strong>
+                    <h6>Think before you move</h6>
+
+                </a>
+</div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                
+                <div class="collapse navbar-collapse" id="mainNavbar">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="home.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">
+                                About
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">
+                                Play Chess
+                            </a>
+                        </li>
+
+                        <li class="nav-item ms-lg-3">
+
+                            <a href="Register.html" class="btn btn-outline-light">
+
+                                Register
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div id="spaceCarousel" class="carousel slide" data-bs-ride="carousel">
+
+           
+
+            <div class="carousel-indicators">
+
+                <button type="button" data-bs-target="#spaceCarousel"
+                    data-bs-slide-to="0" class="active"></button>
+
+                <button type="button" data-bs-target="#spaceCarousel"
+                    data-bs-slide-to="1"></button>
+
+                <button type="button" data-bs-target="#spaceCarousel"
+                    data-bs-slide-to="2"></button>
+
+            </div>
+
+
+            <div class="carousel-inner">
+
+
+            
+                <div class="carousel-item active">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJiJU0pJJyi1M5u2ukCjTbmJYs1g19Tv7ZWj87D1XBxA&s=10"
+                        class="d-block w-100" alt="Chess">
+
+                    <div class="carousel-caption">
+
+                        <h1>Become the GrandMaster</h1>
+
+                        <p class="lead">
+                            Improve your strategy, sharpen your tactics,
+                            and challenge yourself with exciting chess matches.
+                        </p>
+
+                        <a href="about.html" class="btn btn-light btn-lg">
+
+                            Start With Challenge
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+              
+
+                <div class="carousel-item">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw_ZBPmuh3vsAASafP4GpoR3CTEEwpxBwWzLrafpslXlcImJFZt3u11Fk&s=10"
+                        class="d-block w-100" alt="Chess">
+
+                    <div class="carousel-caption">
+
+                        <h1>Learn Winning Strategies</h1>
+
+                        <p class="lead">
+                            Discover powerful openings, tactical
+                            combinations, and endgame techniques
+                            used by grandmasters.
+                        </p>
+
+                        <a href="product.html" class="btn btn-light btn-lg">
+
+                            Lessons
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                
+
+                <div class="carousel-item">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDCFOKIcJ1gtVFszxamDo5bKyAZbmZ6RDVOhzwTWV_Zg&s=10"
+                        class="d-block w-100" alt="Chess">
+
+                    <div class="carousel-caption">
+
+                        <h1>Challenge Players Worldwide</h1>
+
+                        <p class="lead">
+                            Compete with players around the world,
+                            improve your rating, and become a
+                            stronger chess player.
+                        </p>
+
+                        <a href="about.html" class="btn btn-light btn-lg">
+
+                            Contact us 
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <button class="carousel-control-prev" type="button"
+                data-bs-target="#spaceCarousel" data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+
+           
+
+            <button class="carousel-control-next" type="button"
+                data-bs-target="#spaceCarousel" data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+        </div>
+
+
+       
+
+        <section class="container py-5">
+
+            <div class="text-center mb-5">
+
+                <h2 class="display-6 fw-bold">
+                    Explore Chess Features
+                </h2>
+
+                <p class="text-secondary">
+                    Everything you need to learn, practice,
+                    and master the game of chess.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <!-- Card 1 -->
+
+                <div class="col-md-4">
+
+                    <div class="card service-card h-100">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0QGsyMWmNajtSF0RsQ6pCorJEuUji7TahNXBHAyhefg&s=10"
+                            class="card-img-top" alt="Play Chess">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Play Online Matches
+                            </h5>
+
+                            <p class="card-text">
+                                Challenge players of different skill
+                                levels in exciting real-time chess
+                                battles and improve your gameplay.
+                            </p>
+
+                            <a href="product.html"
+                                class="btn btn-outline-light">
+
+                                Play Now
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 2 -->
+
+                <div class="col-md-4">
+
+                    <div class="card service-card h-100">
+
+                        <img src="https://images.unsplash.com/photo-1614728263952-84ea256f9679"
+                            class="card-img-top" alt="Chess Puzzles">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Chess Puzzles
+                            </h5>
+
+                            <p class="card-text">
+                                Solve tactical puzzles to sharpen
+                                your calculation, pattern
+                                recognition, and decision making.
+                            </p>
+
+                            <a href="product.html"
+                                class="btn btn-outline-light">
+
+                                Solve Puzzles
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 3 -->
+
+                <div class="col-md-4">
+
+                    <div class="card service-card h-100">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE_R3L-0fJQMGabeuq6knLTVn5aOgY6vd7dhvSqslszw&s=10"
+                            class="card-img-top" alt="Learn Chess">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Learn From Masters
+                            </h5>
+
+                            <p class="card-text">
+                                Study legendary games, opening
+                                theory, and endgame techniques
+                                from the world's greatest players.
+                            </p>
+
+                            <a href="product.html"
+                                class="btn btn-outline-light">
+
+                                Start Learning
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="bg-black text-light text-center p-4">
+
+        <p class="mb-1">
+            &copy; 2026 CHECKORA
+        </p>
+
+        <small class="text-secondary">
+            Play • Learn • Analyze • Improve
+        </small>
+
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>

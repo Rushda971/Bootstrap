@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" type="text/css" href="css/mycss.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand text-danger" href="#">ADVENTURE</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" aria-expanded="false">
+              Service
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link ">Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link">Support</a>
+          </li>
+
+        </ul>
+
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- carosal -->
+
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="ad_img.png" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="h1"><strong>ADVENTURE</strong></h1>
+          <p>MURI, a heart template</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="travel.jpg" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="h1">ADVENTURE</h1>
+          <p>MURI, a template from heart of beauty</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="adv.jpg" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="h1">ADVENTURE</h1>
+          <p>MURI, a heart template</p>
+        </div>
+      </div>
+
+    </div>
+
+  
+
+  <button class="carousel-control-prev" type="button"
+    data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button"
+    data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+  </div>
+
+
+  <!-- next page -->
+  <div class="container mt-5">
+    <div id="space">
+      <h1 class="h1 text-center">WHO WE ARE</h1>
+      <p class="p text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the<br> industry's standard dummy text ever since the 1500s.</p>
+    </div>
+    <!-- bars -->
+    <div class="row">
+      <div class=" col-xl-6">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Lorem ipsum dolor sit amet
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim
+                suscipit. Duis lorem nulla, eleifend
+                Ut urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur
+                id laoreet velit.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Lorem ipsum dolor sit amet
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim
+                suscipit. Duis lorem nulla, eleifend
+                Ut urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur
+                id laoreet velit.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Lorem ipsum dolor sit amet
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim
+                suscipit. Duis lorem nulla, eleifend
+                Ut urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur
+                id laoreet velit.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-6">
+        <!-- progress bar -->
+        <div class="side">
+          <div class="progress my-3">
+  <div class="progress-bar bg-danger bar-80">Web Design 80%</div>
+</div>
+
+<div class="progress my-3">
+  <div class="progress-bar bg-danger bar-60">HTML & CSS 60%</div>
+</div>
+
+<div class="progress my-3">
+  <div class="progress-bar bg-danger bar-90">WordPress 90%</div>
+</div>
+
+<div class="progress my-3">
+  <div class="progress-bar bg-danger bar-50">Jomlaa 50%</div>
+</div>
+
+<div class="progress my-3">
+  <div class="progress-bar bg-danger bar-85">Php and MySql 85%</div>
+</div>
+
+</div>
+    </div>
+     
+  <!-- end of progress bar  -->
+  <div class="container">
+    <div class="card-group mt-3 ">
+      <div class="card mx-3">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card mx-3 ">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card mx-3">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- image  -->
+  <div class="container-fluid mt-5">
+    <div class="bluepic">
+
+    </div>
+  </div>
+  <!-- offer  -->
+  <div class="container mt-5">
+    <h1 class="h1 text-center">WHAT WE OFFER</h1>
+    <!-- row 1 -->
+    <div class="row mx-5 mt-5">
+      <div class="col-xl-6">
+        <div class="row">
+          <div class="col-xl-3">
+            <div class="iconbtn">
+              <button type="button" class="btn btn-danger">
+                <i class="fa-solid fa-cloud-arrow-down"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-xl-9">
+            <div class="side">
+              <h5 class="h5 ">TECHNICAL ANALYSIS</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- shop -->
+      <div class="col-xl-6">
+        <div class="row">
+          <div class="col-xl-3">
+            <div class="iconbtn">
+              <button type="button" class="btn btn-danger">
+                <i class="fa-solid fa-store"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-xl-9">
+            <div class="side">
+              <h5 class="h5 ">GENERAL CONTENT</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- row 2 -->
+      <!-- consulation -->
+      <div class="col-xl-6 mt-3">
+        <div class="row">
+          <div class="col-xl-3">
+            <div class="iconbtn">
+              <button type="button" class="btn btn-danger">
+                <i class="fa-solid fa-chart-line"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-xl-9">
+            <div class="side">
+              <h5 class="h5 ">CONSULATION</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- support  -->
+      <div class="col-xl-6 mt-3">
+        <div class="row">
+          <div class="col-xl-3">
+            <div class="iconbtn">
+              <button type="button" class="btn btn-danger">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-xl-9">
+            <div class="side">
+              <h5 class="h5 ">24/7 SUPPORT</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- customer review -->
+  <div class="container mt-5">
+    <div class="col-xl-4">
+      <div class="photo">
+        <img src="">
+      </div>
+    </div>
+  </div>
+  <!-- night city -->
+  <div class="container-fluid night ">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xl-3">
+
+          <div class="red">
+            <h1>
+              <i class="fa-solid fa-heart text-light text-center "></i>
+            </h1>
+
+            <h3 class="h1 text-light text-center">+10K</h3>
+
+            <p class="text-light text-center">LOVE OUR TEAM</p>
+          </div>
+
+        </div>
+        <!-- tick  -->
+        <div class="col-xl-3 ">
+          <div class="red">
+
+            <h1>
+              <i class="fa-solid fa-check text-light text-center"></i>
+            </h1>
+
+            <h3 class="h1 text-light text-center">400+</h3>
+
+            <p class="text-light text-center">CHECK OUR</p>
+          </div>
+
+        </div>
+
+        <!-- reload  -->
+        <div class="col-xl-3 ">
+          <div class="red ">
+            <h1>
+              <i class="fa-solid fa-arrow-rotate-right text-light text-center"></i>
+            </h1>
+            <h3 class="h1 text-light text-center">312</h3>
+            <p class=" text-light text-center">REPEAT CLIENT</p>
+
+
+          </div>
+        </div>
+        <!-- cup  -->
+        <div class="col-xl-3">
+          <div class="red">
+            <h1>
+              <i class="fa-solid fa-trophy text-light text-center"></i>
+            </h1>
+            <h3 class="h1 text-light text-center">+10K</h3>
+            <p class=" text-light text-center">PIZZA ORDERS</p>
+          </div>
+        </div>
+      </div>
+      <!-- end  -->
+    </div>
+  </div>
+
+  <!-- our awesome work  -->
+  <div class="container mt-5">
+
+    <h1 class="h1 mt-5 text-center">OUR AWESOME WORKS</h1>
+    <p class="text-center">Lorem Ipsum is simply dummy text of the printing and
+      typesetting industry.</p>
+</div>
+
+<!-- nav  -->
+<div class="container my-4">
+  <ul class="nav justify-content-center gap-4">
+    <li class="nav-item">
+      <a class="nav-link text-dark fw-semibold" href="#">ALL</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark fw-semibold" href="#">PHOTOGRAPHY</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark fw-semibold" href="#">GRAPHIC</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark fw-semibold" href="#">PRINT</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark fw-semibold" href="#">WEB</a>
+    </li>
+  </ul>
+</div>
+<!-- nav end  -->
+    <div class="container mt-5 mx-5 my-5">
+      <div class="row">
+          <div class="col-xl-4">
+<!-- area1  -->
+          <div class="area">
+            <img src="images/flyer.png" class="ima">
+            <div class="overlayes">
+
+              <i class="fa-solid fa-magnifying-glass-arrow-right text-center" class="icons"></i>
+
+            </div>
+          </div>
+
+
+        </div>
+<!-- area2 -->
+        <div class="col-xl-4">
+          <div class="area">
+  <a href="https://www.wired.com/story/5-ways-work-remotely-effectively/" target="_blank">
+    
+    <img src="images/work.png" class="ima" alt="work">
+
+    <div class="overlayes">
+      <i class="fa-solid fa-magnifying-glass-arrow-right"></i>
+    </div>
+
+  </a>
+</div>
+</div>
+
+<!-- area3  -->
+        <div class="col-xl-4">
+          <div class="area">
+
+            <img src="images/shoe.png" class="ima">
+            <div class="overlayes"><i class="fa-solid fa-magnifying-glass-arrow-right" class="icons"></i></div>
+          </div>
+
+        </div>
+
+      
+      <!-- area3 end  -->
+    
+
+  
+
+  
+  <!-- awesome  work-->
+  <div class="container">
+    <h1 class="h1 mt-5 text-center">OUR AWESOME WORKS</h1>
+    <div class="row mt-5 mx-3">
+      <div class="col-xl-3">
+        <i class="fa-solid fa-hat-wizard"></i>
+        graphicriver
+      </div>
+      <div class="col-xl-3">
+        <i class="fa-solid fa-hand-holding-heart"></i>
+        themeforest
+      </div>
+      <div class="col-xl-3">
+        <i class="fa-solid fa-graduation-cap"></i>
+        audiojungle
+      </div>
+      <div class="col-xl-3">
+        <i class="fa-regular fa-chess-bishop"></i>codecanyon
+      </div>
+    </div>
+  </div>
+  <!-- end  -->
+  <!-- last section  -->
+  <div class="container-fluid bg-secondary mt-5 ">
+
+    <div class="container mt-5 ">
+      <div class="row">
+        <div class="col-xl-4 mt-3">
+          <p>Subscribe to our newletter to get update</p>
+        </div>
+        <div class="col-xl-4"></div>
+        <div class="col-xl-4">
+          <div class="input-group mb-3 mt-3">
+            <input type="text" class="form-control" placeholder="Enter your email" aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+            <button class="btn btn-outline-danger bg-danger" type="button" id="button"><i
+                class="fa-brands fa-telegram"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid bg-dark">
+    <div class="container">
+      <div class="row">
+        <!-- col1  -->
+        <div class="col-xl-3 mt-3">
+          <h3 class="h3 text-danger">ADVENTURE</h3>
+          <i class="fa-brands fa-facebook-f bg-white mt-4"></i>
+          <i class="fa-brands fa-google bg-white mt-4"></i>
+          <i class="fa-brands fa-twitter bg-white mt-4"></i>
+          <i class="fa-solid fa-v bg-white mt-4"></i>
+          <i class="fa-brands fa-linkedin bg-white mt-4"></i>
+        </div>
+        <!-- col2  -->
+        <div class="col-xl-3 mt-3">
+          <p class="text-white">Some feature</p>
+          <p class="text-white">✔ Lorem ipsum dolor sit amet</p>
+          <p class="text-white">✔ Aliquam tincidunace ectature</p>
+          <p class="text-white">✔ Vestibulum Lorem ipsum dolor sit amet</p>
+          <p class="text-white">✔ Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+        </div>
+        <!-- col3 -->
+        <div class="col-xl-3 mt-3">
+          <p class="text-white">Tages</p>
+          <span class="badge bg-danger">AGENCY</span>
+          <span class="badge bg-danger">PORTFOLIO</span>
+          <span class="badge bg-danger">BLOG</span>
+          <span class="badge bg-danger">ELEMENT</span>
+          <span class="badge bg-danger">PROFESSIONAL</span>
+          <span class="badge bg-danger">BUISNESS</span>
+
+        </div>
+        <!-- col4  -->
+        <div class="col-xl-3 mt-3">
+          <p class="text-white">Flicker poster</p>
+          <div class="row">
+            <div class="container_grid">
+              <div><img src="images/f1.png"></div>
+              <div><img src="images/f2.png"></div>
+              <div><img src="images/f3.png"></div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="container_grid mt-5 ">
+              <div><img src="images/f4.png"></div>
+              <div><img src="images/f5.png"></div>
+              <div><img src="images/f6.png"></div>
+
+            </div>
+            <div>
+
+
+
+              <!-- end  -->
+            </div>
+          </div>
+        </div>
+
+</body>
+
+</html>
